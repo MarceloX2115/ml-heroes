@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ML Heroes — Funções</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">⚔️</span>
+        <span class="logo-text">ML <strong>Heroes</strong></span>
+      </div>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Heróis</a>
+        <a href="funcoes.html" class="nav-link active">Funções</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <h1>Funções dos Heróis</h1>
+    <p>Gerencie as classes disponíveis no jogo</p>
+  </section>
+
+  <main class="container">
+
+    <section class="filters-bar">
+      <h2 style="margin:0; flex:1;">Funções Cadastradas</h2>
+      <button id="btnNovaFuncao" class="btn btn-primary">+ Nova Função</button>
+    </section>
+
+    <section id="listaFuncoes" class="funcoes-list">
+      <div class="loading">Carregando funções…</div>
+    </section>
+
+  </main>
+
+  <!-- MODAL FUNÇÃO -->
+  <div id="modalFuncao" class="modal hidden">
+    <div class="modal-box modal-box--sm">
+      <div class="modal-header">
+        <h2 id="modalTitulo">Nova Função</h2>
+        <button id="btnFecharModal" class="btn-close">✕</button>
+      </div>
+      <form id="formFuncao" class="modal-form">
+        <input type="hidden" id="funcaoId" />
+
+        <div class="form-row">
+          <label>Nome *</label>
+          <input type="text" id="funcaoNome" class="input-field" required placeholder="Ex: Tank" />
+        </div>
+
+        <div class="form-row">
+          <label>Descrição</label>
+          <textarea id="funcaoDescricao" class="input-field textarea" rows="3" placeholder="Descreva a função…"></textarea>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" id="btnCancelar" class="btn btn-ghost">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Salvar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="overlay" class="overlay hidden"></div>
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="../js/funcoes.js"></script>
+</body>
+</html>
