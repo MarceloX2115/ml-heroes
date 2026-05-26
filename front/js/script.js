@@ -2,7 +2,7 @@
    ML HEROES — script.js (página de heróis)
    ============================================= */
 
-const API = 'https://ml-heroes-production.up.railway.app';
+const API = 'https://ml-heroes-production.up.railway.app/api';
 
 // ---- Elementos ---- //
 const listaHerois       = document.getElementById('listaHerois');
