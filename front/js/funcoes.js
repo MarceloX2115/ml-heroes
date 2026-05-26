@@ -2,7 +2,7 @@
    ML HEROES — funcoes.js (página de funções)
    ============================================= */
 
-const API = 'https://heroes-ml-views.up.railway.app/api';
+const API = 'https://ml-heroes-production.up.railway.app';
 
 const listaFuncoes   = document.getElementById('listaFuncoes');
 const btnNovaFuncao  = document.getElementById('btnNovaFuncao');
